@@ -22,7 +22,7 @@
       "email": "mdaprotis@hotmail.com"
     }
   },
-  "profile": "Soy Ingeniero en Sistemas graduado de la Universidad del Sur en el año 2014, estoy familiarizado con distintos lenguajes de programación tanto de desarrollo web como de sistemas embebidos.\nActualmente trabajo como Full-Stack developer hace mas de 5 años, me desempeño realizando el análisis requerimientos, diseñando interfaces de Usuario, desarrollando tanto en Back-end como Front-end y haciendo el testeo y debuggeo de nuestros sistemas.",
+  "profile": "Soy Ingeniero en Sistemas graduado de la Universidad Nacional del Sur en el año 2014, estoy familiarizado con distintos lenguajes de programación tanto de desarrollo web como de sistemas embebidos.\nActualmente trabajo como Full-Stack developer hace mas de 5 años, me desempeño realizando el análisis de requerimientos, diseñando interfaces de Usuario, desarrollando tanto en Back-end como Front-end y haciendo el testeo y debuggeo de nuestros sistemas.",
   "study": {
     "primary": {
       "from": "",
@@ -171,6 +171,7 @@
     "technical_skills": "Habilidades Técnicas",
     "percentage_description": "Los porcentajes que se muestran a continuación, representan la cantidad de tiempo de uso de dicha tecnología en particular proporcionado a mis años de experiencia laboral.",
     "professional_skills": "Habilidades Profesionales",
+    "years": "años",
     "web_development": "Desarrollo Web",
     "web_design": "Diseño Web",
     "csv": "CVS",
