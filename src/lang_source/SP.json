@@ -62,7 +62,7 @@
   "work": [
     {
       "from": "2015-01-05",
-      "until": "la Actualida",
+      "until": "Presente",
       "place": "Cooperativa Obrera LTDA",
       "position": "Full-Stack Developer",
       "description": "Actualmente estoy trabajando como Full Stack developer en Cooperativa Obrera LTDA, normalmente me dedico a hacer los sistema de forma integral, tanto la parte del front-end  como del back-end, realizando los sistemas que se utilizan en las distintas áreas de la empresa como RRHH, el Área de Contaduría, Seguridad e Higiene, Comercialización, Logística entre otros. \n     Comúnmente comienzo recabando la información necesaria de los requerimientos del sistema y ayudando a los futuros usuarios a darse una idea de lo que realmente están solicitando. Luego listo las necesidades para priorizarlas y comenzar el desarrollo, esto lo hacemos también con la practica de desarrollo Ágil, lo cual nos permite tener un seguimiento continuo y los usuarios pueden ver el avance que se lleva a cabo de forma constante. Finalmente se realizan los testeos y se pone en producción el sistema. También cabe destacar que realizamos el mantenimiento y soporte de aquellos sistemas que desarrollamos.",
@@ -96,28 +96,29 @@
             "icon": "devicons devicons-javascript",
             "value": 80
           },
-          { "title": "PHP", "icon": "devicons devicons-php", "value": 90 },
-          {
-            "title": "Python",
-            "icon": "devicons devicons-python",
-            "value": 40
-          },
           { "title": "React", "icon": "cib-react", "value": 40 },
           {
             "title": "Jquery",
             "icon": "devicons devicons-jquery",
             "value": 80
           },
-          { "title": "ES6+", "icon": "", "value": 50 }
+          { "title": "ES6+", "icon": "", "value": 50 },
+          { "title": "PHP", "icon": "devicons devicons-php", "value": 90 },
+          {
+            "title": "Python",
+            "icon": "devicons devicons-python",
+            "value": 50
+          }
         ]
       },
       {
         "title": "web_design",
         "color": "#cebe32",
         "list": [
-          { "title": "CSS", "icon": "devicons devicons-css3", "value": 80 },
-          { "title": "SASS", "icon": "devicons devicons-sass", "value": 60 },
-          { "title": "HTML5", "icon": "devicons devicons-html5", "value": 70 }
+          { "title": "CSS", "icon": "devicons devicons-css3", "value": 60 },
+          { "title": "SASS", "icon": "devicons devicons-sass", "value": 40 },
+          { "title": "HTML5", "icon": "devicons devicons-html5", "value": 70 },
+          { "title": "Bootstrap", "icon": "cib-bootstrap ", "value": 30 }
         ]
       },
       {
@@ -152,6 +153,44 @@
         "title": "embedded_sistems",
         "color": "#3283ce",
         "list": [{ "title": "Arduino", "icon": "cib-arduino", "value": 40 }]
+      },
+      {
+        "title": "frameworks",
+        "bgColor": "#3283ce",
+        "list": [
+          {
+            "title": "CodeIgniter",
+            "icon": "cib-codeigniter ",
+            "value": 80
+          },
+          {
+            "title": "Redux",
+            "icon": "cib-redux ",
+            "value": 40
+          }
+        ]
+      },
+      {
+        "title": "project_managment",
+        "bgColor": "#3283ce",
+        "list": [
+          {
+            "title": "Agile/SCRUM",
+            "icon": "",
+            "value": 40
+          }
+        ]
+      },
+      {
+        "title": "other_technologies",
+        "bgColor": "#3283ce",
+        "list": [
+          {
+            "title": "Docker",
+            "icon": "cib-docker",
+            "value": 40
+          }
+        ]
       }
     ],
     "professional_skills": {
@@ -162,18 +201,21 @@
         { "title": "ps_responsability", "icon": "", "value": 100 },
         { "title": "ps_creativity", "icon": "", "value": 70 },
         { "title": "ps_confidentiality", "icon": "", "value": 100 },
-        { "title": "ps_pressure", "icon": "", "value": 70 }
+        { "title": "ps_pressure", "icon": "", "value": 70 },
+        { "title": "ps_adaptability", "icon": "", "value": 90 },
+        { "title": "ps_desition_making", "icon": "", "value": 80 }
       ]
     }
   },
   "skills": [],
   "work_translation": {
     "technical_skills": "Habilidades Técnicas",
-    "percentage_description": "Los porcentajes que se muestran a continuación, representan la cantidad de tiempo de uso de dicha tecnología en particular proporcionado a mis años de experiencia laboral.",
     "professional_skills": "Habilidades Profesionales",
-    "years": "años",
     "web_development": "Desarrollo Web",
     "web_design": "Diseño Web",
+    "frameworks": "Frameworks",
+    "other_technologies": "Otras Tecnologías",
+    "project_managment": "Gestion de Proyectos",
     "csv": "CVS",
     "db": "Base de Datos",
     "embedded_sistems": "Sistemas Embebidos",
@@ -182,6 +224,8 @@
     "ps_responsability": "Responsabilidad",
     "ps_creativity": "Creatividad",
     "ps_confidentiality": "Confiabilidad",
-    "ps_pressure": "Trabajo bajo presión"
+    "ps_pressure": "Trabajo bajo presión",
+    "ps_adaptability": "Adaptabilidad",
+    "ps_desition_making": "Toma de Decisiones"
   }
 }

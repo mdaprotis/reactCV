@@ -76,20 +76,6 @@ export default function Knowledge({ t }) {
               {t("work_translation.technical_skills")}
             </Typography>
           </Box>
-          <Box
-            display="flex"
-            justifyContent="center"
-            m={1}
-            p={1}
-            fontWeight="fontWeightBold"
-          >
-            <Typography variant="caption">
-              {t("work_translation.percentage_description") +
-                ` ( ${years_of_experience()} ${t(
-                  "work_translation.years"
-                )} = 100% )`}
-            </Typography>
-          </Box>
           {EN.knowledge.work_related.map((k, i) => {
             return (
               <div key={t("work_translation." + k.title)}>
