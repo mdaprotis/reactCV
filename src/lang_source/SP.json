@@ -1,0 +1,186 @@
+{
+  "hi": "Hola, soy",
+  "lang": "SP",
+  "navbar": {
+    "title": "Mi CV",
+    "about_me": "Acerca de Mi",
+    "profile": "Perfil",
+    "knowledge": "Conocimientos",
+    "work": "Experiencia Laboral"
+  },
+  "personal_data": {
+    "name": "Martín",
+    "surname": "Daprotis",
+    "dni": 32838127,
+    "bdate": "16 Feb. 1987",
+    "bday": "Fecha de Nacimiento",
+    "country": "Argentina",
+    "city": "Bahía Blanca",
+    "contact": {
+      "linkedind": "",
+      "phone": "299-4568950",
+      "email": "mdaprotis@hotmail.com"
+    }
+  },
+  "profile": "Soy Ingeniero en Sistemas graduado de la Universidad del Sur en el año 2014, estoy familiarizado con distintos lenguajes de programación tanto de desarrollo web como de sistemas embebidos.\nActualmente trabajo como Full-Stack developer hace mas de 5 años, me desempeño realizando el análisis requerimientos, diseñando interfaces de Usuario, desarrollando tanto en Back-end como Front-end y haciendo el testeo y debuggeo de nuestros sistemas.",
+  "study": {
+    "primary": {
+      "from": "",
+      "until": "",
+      "institution": "",
+      "title": "",
+      "description": "",
+      "status": 0
+    },
+    "secondary": {
+      "from": "",
+      "until": "",
+      "institution": "",
+      "title": "",
+      "description": "",
+      "status": 0
+    },
+    "university": {
+      "from": "2007",
+      "until": "2014",
+      "institution": "Universidad Nacional del Sur",
+      "degree": "Ing. en Sistemas de Computación",
+      "description": "Ingenieria en ciencias de la computación orientada tanto en electrónica como en el area de computación.",
+      "status": 1
+    },
+    "courses": [
+      {
+        "from": "",
+        "until": "",
+        "institution": "",
+        "title": "",
+        "description": "",
+        "status": 0
+      }
+    ]
+  },
+  "work": [
+    {
+      "from": "2015-01-05",
+      "until": "la Actualida",
+      "place": "Cooperativa Obrera LTDA",
+      "position": "Full-Stack Developer",
+      "description": "Actualmente estoy trabajando como Full Stack developer en Cooperativa Obrera LTDA, normalmente me dedico a hacer los sistema de forma integral, tanto la parte del front-end  como del back-end, realizando los sistemas que se utilizan en las distintas áreas de la empresa como RRHH, el Área de Contaduría, Seguridad e Higiene, Comercialización, Logística entre otros. \n     Comúnmente comienzo recabando la información necesaria de los requerimientos del sistema y ayudando a los futuros usuarios a darse una idea de lo que realmente están solicitando. Luego listo las necesidades para priorizarlas y comenzar el desarrollo, esto lo hacemos también con la practica de desarrollo Ágil, lo cual nos permite tener un seguimiento continuo y los usuarios pueden ver el avance que se lleva a cabo de forma constante. Finalmente se realizan los testeos y se pone en producción el sistema. También cabe destacar que realizamos el mantenimiento y soporte de aquellos sistemas que desarrollamos.",
+      "status": 1
+    },
+    {
+      "from": "2014-04-01",
+      "until": "2015-01-01",
+      "place": "Alas Ingeniería",
+      "position": "",
+      "description": "Migración de la Base de Datos de Smart Plant Foundation para la Empresa PORFERTIL.",
+      "status": 1
+    },
+    {
+      "from": "2014-02-01",
+      "until": "2014-04-01",
+      "place": "MG Consultora",
+      "position": "",
+      "description": "Desarrollo de sistema embebido que permitio mejorar las habilitades cognitivas",
+      "status": 1
+    }
+  ],
+  "knowledge": {
+    "work_related": [
+      {
+        "title": "web_development",
+        "color": "#ef5350",
+        "list": [
+          {
+            "title": "JavaScript",
+            "icon": "devicons devicons-javascript",
+            "value": 80
+          },
+          { "title": "PHP", "icon": "devicons devicons-php", "value": 90 },
+          {
+            "title": "Python",
+            "icon": "devicons devicons-python",
+            "value": 40
+          },
+          { "title": "React", "icon": "cib-react", "value": 40 },
+          {
+            "title": "Jquery",
+            "icon": "devicons devicons-jquery",
+            "value": 80
+          },
+          { "title": "ES6+", "icon": "", "value": 50 }
+        ]
+      },
+      {
+        "title": "web_design",
+        "color": "#cebe32",
+        "list": [
+          { "title": "CSS", "icon": "devicons devicons-css3", "value": 80 },
+          { "title": "SASS", "icon": "devicons devicons-sass", "value": 60 },
+          { "title": "HTML5", "icon": "devicons devicons-html5", "value": 70 }
+        ]
+      },
+      {
+        "title": "csv",
+        "color": "#4db6ac",
+        "list": [
+          {
+            "title": "GIT",
+            "icon": "devicons devicons-git_branch",
+            "value": 80
+          }
+        ]
+      },
+      {
+        "title": "db",
+        "color": "#8bc34a",
+        "list": [
+          { "title": "MySQL", "icon": "cib-mysql", "value": 90 },
+          {
+            "title": "Oracle",
+            "icon": "devicons devicons-database",
+            "value": 30
+          },
+          {
+            "title": "Informix",
+            "icon": "devicons devicons-database",
+            "value": 70
+          }
+        ]
+      },
+      {
+        "title": "embedded_sistems",
+        "color": "#3283ce",
+        "list": [{ "title": "Arduino", "icon": "cib-arduino", "value": 40 }]
+      }
+    ],
+    "professional_skills": {
+      "bgColor": "#fba661",
+      "list": [
+        { "title": "ps_communication", "icon": "", "value": 80 },
+        { "title": "ps_team_work", "icon": "", "value": 90 },
+        { "title": "ps_responsability", "icon": "", "value": 100 },
+        { "title": "ps_creativity", "icon": "", "value": 70 },
+        { "title": "ps_confidentiality", "icon": "", "value": 100 },
+        { "title": "ps_pressure", "icon": "", "value": 70 }
+      ]
+    }
+  },
+  "skills": [],
+  "work_translation": {
+    "technical_skills": "Habilidades Técnicas",
+    "percentage_description": "Los porcentajes que se muestran a continuación, representan la cantidad de tiempo de uso esa tecnología en particular proporcionado a mis años de experiencia laboral.",
+    "professional_skills": "Habilidades Profesionales",
+    "web_development": "Desarrollo Web",
+    "web_design": "Diseño Web",
+    "csv": "CVS",
+    "db": "Base de Datos",
+    "embedded_sistems": "Sistemas Embebidos",
+    "ps_communication": "Comunicación",
+    "ps_team_work": "Trabajo en Equipo",
+    "ps_responsability": "Responsabilidad",
+    "ps_creativity": "Creatividad",
+    "ps_confidentiality": "Confiabilidad",
+    "ps_pressure": "Trabajo bajo presión"
+  }
+}

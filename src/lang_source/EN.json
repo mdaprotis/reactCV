@@ -1,0 +1,186 @@
+{
+  "hi": "Hello, I'm",
+  "lang": "EN",
+  "navbar": {
+    "title": "My CV",
+    "about_me": "About Me",
+    "profile": "Profile",
+    "knowledge": "Knowledge",
+    "work": "Work Experience"
+  },
+  "personal_data": {
+    "name": "Martín",
+    "surname": "Daprotis",
+    "dni": 32838127,
+    "bdate": "February 16th, 1987",
+    "bday": "Birthday",
+    "country": "Argentine",
+    "city": "Bahía Blanca",
+    "contact": {
+      "linkedind": "",
+      "phone": "299-4568950",
+      "email": "mdaprotis@hotmail.com"
+    }
+  },
+  "profile": " I am a System Engineer graduated from Universidad Nacional del Sur in 2014 familiarized with a variety of programming languages for web-development and embedded systems.\n I am a Full-Stack developer with 5+ years of experience in both Back-end and Front-end, gathering requirements, designing UI, developing, testing and debugging our Systems.",
+  "study": {
+    "primary": {
+      "from": "",
+      "until": "",
+      "institution": "",
+      "title": "",
+      "description": "",
+      "status": 0
+    },
+    "secondary": {
+      "from": "",
+      "until": "",
+      "institution": "",
+      "title": "",
+      "description": "",
+      "status": 0
+    },
+    "university": {
+      "from": "2007",
+      "until": "2014",
+      "institution": "Universidad Nacional del Sur",
+      "degree": "Computer Systems Engineer",
+      "description": "",
+      "status": 1
+    },
+    "courses": [
+      {
+        "from": "",
+        "until": "",
+        "institution": "",
+        "title": "",
+        "description": "",
+        "status": 0
+      }
+    ]
+  },
+  "work": [
+    {
+      "from": "2015-01-05",
+      "until": "TODAY",
+      "place": "Cooperativa Obrera LTDA",
+      "position": "Full-Stack Developer",
+      "description": "I am currently working as a Full Stack developer at Cooperativa Obrera LTDA, I frequently work in both front-end and back-end development, deploying web pages for different areas in the company such as HHRR, Accounting, Safety and Health, marketing, logistics, etc. \n Commonly I begin by gathering the users requirements and helping them realize what they really want, then I list the necessities to prioritize them and start working on it, finally I do the testing and deploy the website. We also take care of the maintenance and client support of those pages.",
+      "status": 1
+    },
+    {
+      "from": "2014-04-01",
+      "until": "2015-01-01",
+      "place": "Alas Ingeniería",
+      "position": "",
+      "description": "Se realizo la migracion de la Base de Datos Oracle de Smart Plant Foundation haciendo uso de las tecnologias propias del sistema para la Empresa PORFERTIL.",
+      "status": 1
+    },
+    {
+      "from": "2014-02-01",
+      "until": "2014-04-01",
+      "place": "MG Consultora",
+      "position": "",
+      "description": "Desarrolle un sistema embebido para la empresa el cual fue utilizado para mejorar las habilitades cognitivas de las personas que lo utilizaron.",
+      "status": 1
+    }
+  ],
+  "knowledge": {
+    "work_related": [
+      {
+        "title": "web_development",
+        "bgColor": "#ef5350",
+        "list": [
+          {
+            "title": "JavaScript",
+            "icon": "devicons devicons-javascript",
+            "value": 80
+          },
+          { "title": "PHP", "icon": "devicons devicons-php", "value": 90 },
+          {
+            "title": "Python",
+            "icon": "devicons devicons-python",
+            "value": 40
+          },
+          { "title": "React", "icon": "cib-react", "value": 40 },
+          {
+            "title": "Jquery",
+            "icon": "devicons devicons-jquery",
+            "value": 80
+          },
+          { "title": "ES6+", "icon": "", "value": 50 }
+        ]
+      },
+      {
+        "title": "web_design",
+        "bgColor": "#cebe32",
+        "list": [
+          { "title": "CSS", "icon": "devicons devicons-css3", "value": 80 },
+          { "title": "SASS", "icon": "devicons devicons-sass", "value": 60 },
+          { "title": "HTML5", "icon": "devicons devicons-html5", "value": 70 }
+        ]
+      },
+      {
+        "title": "csv",
+        "bgColor": "#4db6ac",
+        "list": [
+          {
+            "title": "GIT",
+            "icon": "devicons devicons-git_branch",
+            "value": 80
+          }
+        ]
+      },
+      {
+        "title": "db",
+        "bgColor": "#8bc34a",
+        "list": [
+          { "title": "MySQL", "icon": "cib-mysql", "value": 90 },
+          {
+            "title": "Oracle",
+            "icon": "devicons devicons-database",
+            "value": 30
+          },
+          {
+            "title": "Informix",
+            "icon": "devicons devicons-database",
+            "value": 70
+          }
+        ]
+      },
+      {
+        "title": "embedded_sistems",
+        "bgColor": "#3283ce",
+        "list": [{ "title": "Arduino", "icon": "cib-arduino", "value": 40 }]
+      }
+    ],
+    "professional_skills": {
+      "bgColor": "#fba661",
+      "list": [
+        { "title": "ps_communication", "icon": "", "value": 80 },
+        { "title": "ps_team_work", "icon": "", "value": 90 },
+        { "title": "ps_responsability", "icon": "", "value": 100 },
+        { "title": "ps_creativity", "icon": "", "value": 70 },
+        { "title": "ps_confidentiality", "icon": "", "value": 100 },
+        { "title": "ps_pressure", "icon": "", "value": 70 }
+      ]
+    }
+  },
+  "skills": [],
+  "work_translation": {
+    "technical_skills": "Technical Skills",
+    "percentage_description": "The percentages shown below, represent the amount of time spent using that particular technology proporcionally to my years of working experience.",
+    "professional_skills": "Professional Skills",
+    "web_development": "Web Development",
+    "web_design": "Web Design",
+    "csv": "CVS",
+    "db": "DataBase",
+    "embedded_sistems": "Embedded Systems",
+    "ps_communication": "Communication",
+    "ps_team_work": "Team Work",
+    "ps_responsability": "Responsability",
+    "ps_creativity": "Creativity",
+    "ps_confidentiality": "Confidentiality",
+    "ps_pressure": "Working Under Pressure"
+  }
+}
