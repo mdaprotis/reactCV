@@ -7,13 +7,12 @@ export const ThemeContext = createContext();
 
 const ThemeContextProvider = (props) => {
   const [theme, setTheme] = useState(AppTheme.DARK);
-  const test = 3;
   const muiTheme = createMuiTheme(AppThemeOptions[theme]);
   const toggleTheme = () => {
     setTheme(theme === AppTheme.LIGHT ? AppTheme.DARK : AppTheme.LIGHT);
   };
   return (
-    <ThemeContext.Provider value={{ test, theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <MuiThemeProvider theme={muiTheme}>{props.children}</MuiThemeProvider>
     </ThemeContext.Provider>
   );
