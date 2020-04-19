@@ -1,13 +1,10 @@
 import React, { useRef } from "react";
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { CssBaseline, Box, makeStyles, Container } from "@material-ui/core";
 import NavBar from "./components/NavBar";
-import AppThemeOptions from "./components/theme";
 import Presentation from "./components/Presentation.js";
 import Profile from "./components/Profile.js";
 import Knowledge from "./components/Knowledge.js";
 import Work from "./components/Work.js";
-
 // Translation Higher Order Component
 import {
   setTranslations,
@@ -34,11 +31,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function App(props) {
-  const { toggleTheme, theme } = props;
+function App({ t }) {
   const classes = useStyles();
-  const muiTheme = createMuiTheme(AppThemeOptions[theme]);
-
   const [key, setLanguageType] = React.useState("EN");
 
   const handleClickLang = (e) => {
@@ -46,8 +40,6 @@ function App(props) {
     setLanguageType(key === "SP" ? "EN" : "SP");
     setLanguage(key);
   };
-  const { t } = props;
-
   const [tabValue, setValue] = React.useState(0);
   const topics = [useRef(null), useRef(null), useRef(null), useRef(null)];
   const handleClickTab = (event, newValue) => {
@@ -60,33 +52,30 @@ function App(props) {
   };
 
   return (
-    <MuiThemeProvider theme={muiTheme}>
-      <CssBaseline>
-        <NavBar
-          onThemeTypeSwitch={toggleTheme}
-          handleClickLang={handleClickLang}
-          t={t}
-          handleClickTab={handleClickTab}
-          tabValue={tabValue}
-        />
-        <Container>
-          <Box justifyContent="center">
-            <Box className={classes.topic} ref={topics[0]}>
-              <Presentation t={t} />
-            </Box>
-            <Box className={classes.topic} ref={topics[1]}>
-              <Profile t={t} />
-            </Box>
-            <Box className={classes.topic} ref={topics[2]}>
-              <Knowledge t={t} />
-            </Box>
-            <Box className={classes.topic} ref={topics[3]}>
-              <Work t={t} language={key} />
-            </Box>
+    <CssBaseline>
+      <NavBar
+        handleClickLang={handleClickLang}
+        t={t}
+        handleClickTab={handleClickTab}
+        tabValue={tabValue}
+      />
+      <Container>
+        <Box justifyContent="center">
+          <Box className={classes.topic} ref={topics[0]}>
+            <Presentation t={t} />
           </Box>
-        </Container>
-      </CssBaseline>
-    </MuiThemeProvider>
+          <Box className={classes.topic} ref={topics[1]}>
+            <Profile t={t} />
+          </Box>
+          <Box className={classes.topic} ref={topics[2]}>
+            <Knowledge t={t} />
+          </Box>
+          <Box className={classes.topic} ref={topics[3]}>
+            <Work t={t} language={key} />
+          </Box>
+        </Box>
+      </Container>
+    </CssBaseline>
   );
 }
 

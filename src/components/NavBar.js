@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import Toolbar from "@material-ui/core/Toolbar";
 import AppBar from "@material-ui/core/AppBar";
+import { ThemeContext } from "../contexts/ThemeContext";
 import {
   makeStyles,
   Icon,
@@ -32,22 +33,21 @@ const useStyles = makeStyles((theme) => ({
 
 export default function NavBar({
   t,
-  onThemeTypeSwitch,
   handleClickLang,
   handleClickTab,
   tabValue,
 }) {
   const classes = useStyles();
-  const [themeType, setThemeType] = React.useState(true);
   const [icon, setIcon] = React.useState("brightness_2");
+  const { test, toggleTheme } = useContext(ThemeContext);
   const handleClick = (e) => {
-    setThemeType(!themeType);
-    onThemeTypeSwitch();
+    toggleTheme();
     setIcon(icon === "brightness_7" ? "brightness_2" : "brightness_7");
   };
 
   return (
     <div>
+      {test}
       <AppBar position="fixed" color="primary">
         <Toolbar varian="condense" className={classes.titlebar}>
           <Grid container direction="row" justify="space-between">

@@ -1,7 +1,7 @@
 import { AppTheme } from "./types";
 import { deepPurple, cyan } from "@material-ui/core/colors";
 
-const appThemeOptions = {
+export const AppThemeOptions = {
   [AppTheme.LIGHT]: {
     palette: {
       type: "light",
@@ -39,5 +39,3 @@ const appThemeOptions = {
     },
   },
 };
-
-export default appThemeOptions;
