@@ -73,7 +73,7 @@
       "until": "2015-01-01",
       "place": "Alas Ingeniería",
       "position": "",
-      "description": "Migración de la Base de Datos de Smart Plant Foundation para la Empresa PORFERTIL.",
+      "description": "En este proyecto de 6 meses se realizó la migración de la Base de Datos de Smart Plant Foundation para la Empresa PORFERTIL, se llevo a cabo haciendo uso de scripts y la base de datos ORACLE dado que no contaba con una herramienta propia para hacerlo.",
       "status": 1
     },
     {
@@ -81,7 +81,7 @@
       "until": "2014-04-01",
       "place": "MG Consultora",
       "position": "",
-      "description": "Desarrollo de sistema embebido que permitio mejorar las habilitades cognitivas",
+      "description": "Se desarrollo un sistema embebido el cual permitió mejorar las habilidades cognitivas de los usuarios de forma lúdica. El sistema fue desarrollado en Arduino y luego se imprimió el circuito posteriormente a separar el Atmega328  para que funcione independiente del modulo de Arduino.",
       "status": 1
     }
   ],

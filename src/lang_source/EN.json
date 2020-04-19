@@ -73,7 +73,7 @@
       "until": "2015-01-01",
       "place": "Alas Ingeniería",
       "position": "",
-      "description": "Se realizo la migracion de la Base de Datos Oracle de Smart Plant Foundation haciendo uso de las tecnologias propias del sistema para la Empresa PORFERTIL.",
+      "description": "In this 6-month project, we migrated the Smart Plant Foundation database from PROFERTIL, it was done with Oracle and some scripts because the system did not have its own tool to do it.",
       "status": 1
     },
     {
@@ -81,7 +81,7 @@
       "until": "2014-04-01",
       "place": "MG Consultora",
       "position": "",
-      "description": "Desarrolle un sistema embebido para la empresa el cual fue utilizado para mejorar las habilitades cognitivas de las personas que lo utilizaron.",
+      "description": "An embedded system was developed, which allowed the users to improve their cognitive habilities by playing games. The system was developed in Arduino and the the Atmega328 was separated later to make a standalone circuit independent of the Arduino module.",
       "status": 1
     }
   ],
