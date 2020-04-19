@@ -1,11 +1,10 @@
-import React, { useRef, useContext } from "react";
+import React, { useRef } from "react";
 import { CssBaseline, Box, makeStyles, Container } from "@material-ui/core";
 import NavBar from "./components/NavBar";
 import Presentation from "./components/Presentation.js";
 import Profile from "./components/Profile.js";
 import Knowledge from "./components/Knowledge.js";
 import Work from "./components/Work.js";
-import { LanguageContext } from "./contexts/LanguageContext";
 import { translate } from "react-switch-lang";
 
 const useStyles = makeStyles((theme) => ({
@@ -18,7 +17,6 @@ const useStyles = makeStyles((theme) => ({
 
 function App({ t }) {
   const classes = useStyles();
-  const { lang } = useContext(LanguageContext);
   const [tabValue, setValue] = React.useState(0);
   const topics = [useRef(null), useRef(null), useRef(null), useRef(null)];
   const handleClickTab = (event, newValue) => {
@@ -44,7 +42,7 @@ function App({ t }) {
             <Knowledge t={t} />
           </Box>
           <Box className={classes.topic} ref={topics[3]}>
-            <Work t={t} language={lang} />
+            <Work t={t} />
           </Box>
         </Box>
       </Container>

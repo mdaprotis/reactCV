@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   ExpansionPanel,
@@ -11,6 +11,7 @@ import {
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import EN from "../lang_source/EN.json";
 import SP from "../lang_source/SP.json";
+import { LanguageContext } from "../contexts/LanguageContext";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,11 +32,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ControlledExpansionPanels({ language, t }) {
+export default function ControlledExpansionPanels({ t }) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
-
-  const lang = language === "EN" ? SP : EN;
+  const { lang } = useContext(LanguageContext);
+  const language = lang === "EN" ? SP : EN;
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
@@ -104,7 +105,7 @@ export default function ControlledExpansionPanels({ language, t }) {
       >
         <Typography variant="h4">{t("navbar.work")}</Typography>
       </Box>
-      {lang.work.map((k, i) => {
+      {language.work.map((k, i) => {
         return (
           <WorkItem
             key={`work_${i}`}

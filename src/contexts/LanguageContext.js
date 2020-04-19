@@ -18,13 +18,12 @@ export const LanguageContext = createContext();
 const LanguageContextProvider = (props) => {
   const [lang, setLanguageType] = useState("EN");
   const handleClickLang = (e) => {
-    console.log("click lang", lang);
     setLanguageType(lang === "SP" ? "EN" : "SP");
     setLanguage(lang);
   };
 
   return (
-    <LanguageContext.Provider value={{ handleClickLang }}>
+    <LanguageContext.Provider value={{ lang, handleClickLang }}>
       {props.children}
     </LanguageContext.Provider>
   );
