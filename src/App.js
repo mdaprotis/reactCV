@@ -1,27 +1,12 @@
-import React, { useRef } from "react";
+import React, { useRef, useContext } from "react";
 import { CssBaseline, Box, makeStyles, Container } from "@material-ui/core";
 import NavBar from "./components/NavBar";
 import Presentation from "./components/Presentation.js";
 import Profile from "./components/Profile.js";
 import Knowledge from "./components/Knowledge.js";
 import Work from "./components/Work.js";
-// Translation Higher Order Component
-import {
-  setTranslations,
-  setDefaultLanguage,
-  setLanguageCookie,
-  setLanguage,
-  translate,
-} from "react-switch-lang";
-import EN from "./lang_source/EN.json";
-import SP from "./lang_source/SP.json";
-
-// Do this two lines only when setting up the application
-setTranslations({ EN, SP });
-setDefaultLanguage("SP");
-
-// If you want to remember selected language
-setLanguageCookie();
+import { LanguageContext } from "./contexts/LanguageContext";
+import { translate } from "react-switch-lang";
 
 const useStyles = makeStyles((theme) => ({
   topic: {
@@ -33,17 +18,10 @@ const useStyles = makeStyles((theme) => ({
 
 function App({ t }) {
   const classes = useStyles();
-  const [key, setLanguageType] = React.useState("EN");
-
-  const handleClickLang = (e) => {
-    console.log("click lang", key);
-    setLanguageType(key === "SP" ? "EN" : "SP");
-    setLanguage(key);
-  };
+  const { lang } = useContext(LanguageContext);
   const [tabValue, setValue] = React.useState(0);
   const topics = [useRef(null), useRef(null), useRef(null), useRef(null)];
   const handleClickTab = (event, newValue) => {
-    //const topic = event.getElementById('topic'+newValue);
     topics[newValue].current.scrollIntoView({
       block: "start",
       behavior: "smooth",
@@ -53,12 +31,7 @@ function App({ t }) {
 
   return (
     <CssBaseline>
-      <NavBar
-        handleClickLang={handleClickLang}
-        t={t}
-        handleClickTab={handleClickTab}
-        tabValue={tabValue}
-      />
+      <NavBar t={t} handleClickTab={handleClickTab} tabValue={tabValue} />
       <Container>
         <Box justifyContent="center">
           <Box className={classes.topic} ref={topics[0]}>
@@ -71,7 +44,7 @@ function App({ t }) {
             <Knowledge t={t} />
           </Box>
           <Box className={classes.topic} ref={topics[3]}>
-            <Work t={t} language={key} />
+            <Work t={t} language={lang} />
           </Box>
         </Box>
       </Container>

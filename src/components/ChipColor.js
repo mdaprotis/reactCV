@@ -19,7 +19,9 @@ export default function BorderLinearProgress({ ...props }) {
     <Chip
       avatar={
         <Avatar>
-          {itemIcon === "" ? (
+          {itemIcon === "null" ? (
+            ""
+          ) : itemIcon === "" ? (
             props.title
           ) : (
             <span

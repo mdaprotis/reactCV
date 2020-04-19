@@ -2,11 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import ThemeContextProvider from "./contexts/ThemeContext";
+import LanguageContextProvider from "./contexts/LanguageContext";
 
 const Root = () => {
   return (
     <ThemeContextProvider>
-      <App />
+      <LanguageContextProvider>
+        <App />
+      </LanguageContextProvider>
     </ThemeContextProvider>
   );
 };

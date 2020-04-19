@@ -1,7 +1,7 @@
 import React, { createContext, useState } from "react";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-import { AppTheme } from "./types";
-import { AppThemeOptions } from "./theme";
+import { AppTheme } from "../theme_source/types";
+import { AppThemeOptions } from "../theme_source/theme";
 
 export const ThemeContext = createContext();
 
@@ -20,18 +20,3 @@ const ThemeContextProvider = (props) => {
 };
 
 export default ThemeContextProvider;
-
-/*import React, { createContext } from "react";
-
-export const ThemeContext = createContext();
-
-const ThemeContextProvider = (props) => {
-  const test = "probando";
-  return (
-    <ThemeContext.Provider value={{ test }}>
-      {props.children}
-    </ThemeContext.Provider>
-  );
-};
-
-export default ThemeContextProvider;*/

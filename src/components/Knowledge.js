@@ -22,13 +22,13 @@ const useStyles = makeStyles((theme) => ({
 export default function Knowledge({ t }) {
   const classes = useStyles();
 
-  const years_of_experience = () => {
+  /*const years_of_experience = () => {
     const today = new Date();
     const past = new Date(2014, 3, 1);
     const diffTime = Math.abs(past - today);
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24) / 365);
     return diffDays;
-  };
+  };*/
 
   function FormRow({ items, bgColor }) {
     return (

@@ -12,6 +12,7 @@ import {
   Avatar,
   Grid,
 } from "@material-ui/core";
+import { LanguageContext } from "../contexts/LanguageContext";
 
 const useStyles = makeStyles((theme) => ({
   title: {
@@ -31,15 +32,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function NavBar({
-  t,
-  handleClickLang,
-  handleClickTab,
-  tabValue,
-}) {
+export default function NavBar({ t, handleClickTab, tabValue }) {
   const classes = useStyles();
   const [icon, setIcon] = React.useState("brightness_2");
   const { test, toggleTheme } = useContext(ThemeContext);
+  const { handleClickLang } = useContext(LanguageContext);
   const handleClick = (e) => {
     toggleTheme();
     setIcon(icon === "brightness_7" ? "brightness_2" : "brightness_7");
