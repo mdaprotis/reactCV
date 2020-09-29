@@ -65,7 +65,7 @@
       "until": "Present",
       "place": "Cooperativa Obrera LTDA",
       "position": "Full-Stack Developer",
-      "description": "I am currently working as a Full Stack developer at Cooperativa Obrera LTDA, I frequently work in both front-end and back-end development, deploying web pages for different areas in the company such as HHRR, Accounting, Safety and Health, marketing, logistics, etc. \n Commonly I begin by gathering the users requirements and helping them realize what they really want, then I list the necessities to prioritize them and start working on it, finally I do the testing and deploy the website. We also take care of the maintenance and client support of those pages.",
+      "description": "Developed a vast variety of Full-Stack internal web systems for the Company, taking responsibility of the full process; from gathering client requirements, designing the data base structure, developing the whole system, testing and debugging, deploying and finally the maintenance of those systems. For more than 5 years I have been working with Codeigniter (MVC) framework, with PHP in Back-End and JavaScrip, JQuery, AJAX and other libraries in Front-End. As regards the UI we implemented our own styled elements using CSS or SASS avoiding the dependencies of third party’s libraries, all this in a Dockerized environment with CI/CD applying SCRUM methodologies. A year and a half ago we started the transition to a MERN stack in order to update our systems, using MySql, Express, React, Redux and NodeJs. This transition is a slow process inasmuch as we incorporate new necessary features along with the migration itself.",
       "status": 1
     },
     {
